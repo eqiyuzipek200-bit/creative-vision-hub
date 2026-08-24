@@ -66,7 +66,7 @@ export function ErrorFallback({
           head back home.
         </p>
 
-        {error.message && process.env.NODE_ENV === "development" ? (
+        {error.message && process.env['NODE_ENV'] === "development" ? (
           <pre
             className="rise-in mt-6 max-h-32 overflow-auto rounded-2xl bg-muted p-4 text-left text-xs text-muted-foreground"
             style={{ animationDelay: "600ms" }}
