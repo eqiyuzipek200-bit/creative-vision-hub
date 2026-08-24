@@ -630,6 +630,24 @@
   text-transform: none;
 }
 
+@utility display-2xl {
+  font-family: var(--font-display);
+  font-weight: 800;
+  letter-spacing: -0.04em;
+  line-height: 0.85;
+  font-size: clamp(2.6rem, 9vw, 6rem);
+  text-transform: none;
+}
+
+@utility display-lg {
+  font-family: var(--font-display);
+  font-weight: 800;
+  letter-spacing: -0.04em;
+  line-height: 0.88;
+  font-size: clamp(2.2rem, 6vw, 5rem);
+  text-transform: none;
+}
+
 /* Stadium glyph that stands in for a letter "o" in display words. */
 @utility glyph-o {
   display: inline-block;
