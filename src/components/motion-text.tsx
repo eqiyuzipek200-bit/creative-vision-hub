@@ -146,7 +146,7 @@ export function AnimatedChars({
 
   return (
     <Tag className={`glyph-host ${className} ${inView ? "char-in" : ""}`}>
-      <span ref={ref} aria-label={text}>
+      <span ref={ref} aria-label={text} className="inline-flex flex-nowrap items-end whitespace-nowrap">
         {chars.map((char, i) =>
           char === " " ? (
             <span key={`sp-${i}`} aria-hidden>
