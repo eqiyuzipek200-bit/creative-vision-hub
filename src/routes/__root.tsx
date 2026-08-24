@@ -25,16 +25,21 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Muh. Yasin — Creative Portfolio 2026" },
+      { title: "Mostafa Samir — Healthcare Full-Stack Engineer" },
       {
         name: "description",
-        content: "Illustration, motion and 2D–3D visual storytelling by Muh. Yasin.",
+        content:
+          "Healthcare full-stack engineer building EHR platforms, HL7/FHIR interoperability, telehealth, and patient portals with .NET 8, Angular, React, and Next.js.",
       },
-      { name: "author", content: "Muh. Yasin" },
-      { property: "og:title", content: "Muh. Yasin — Creative Portfolio 2026" },
+      { name: "author", content: "Mostafa Samir" },
+      {
+        property: "og:title",
+        content: "Mostafa Samir — Healthcare Full-Stack Engineer",
+      },
       {
         property: "og:description",
-        content: "Illustration, motion and 2D–3D visual storytelling by Muh. Yasin.",
+        content:
+          "Healthcare full-stack engineer building EHR platforms, HL7/FHIR interoperability, telehealth, and patient portals with .NET 8, Angular, React, and Next.js.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
