@@ -17,10 +17,10 @@ const socials = [
 /* Portrait ring around the CTA — mirrors the reference composition */
 const floaters: { src: string; alt: string; className: string; size: string }[] = [
   { src: face1, alt: "Client portrait", className: "left-[8%] top-[10%]", size: "h-16 w-16 md:h-[4.75rem] md:w-[4.75rem]" },
-  { src: face2, alt: "Client portrait", className: "left-[19%] top-[30%]", size: "h-16 w-16 md:h-[4.5rem] md:w-[4.5rem]" },
+  { src: face2, alt: "Client portrait", className: "left-[13%] top-[28%]", size: "h-16 w-16 md:h-[4.5rem] md:w-[4.5rem]" },
   { src: face3, alt: "Client portrait", className: "left-[4%] top-[52%]", size: "h-16 w-16 md:h-[4.5rem] md:w-[4.5rem]" },
   { src: face4, alt: "Client portrait", className: "right-[8%] top-[12%]", size: "h-16 w-16 md:h-[4.75rem] md:w-[4.75rem]" },
-  { src: face5, alt: "Client portrait", className: "right-[19%] top-[36%]", size: "h-16 w-16 md:h-[4.5rem] md:w-[4.5rem]" },
+  { src: face5, alt: "Client portrait", className: "right-[13%] top-[34%]", size: "h-16 w-16 md:h-[4.5rem] md:w-[4.5rem]" },
   { src: face6, alt: "Client portrait", className: "right-[4%] top-[56%]", size: "h-16 w-16 md:h-[4.5rem] md:w-[4.5rem]" },
 ];
 
@@ -113,7 +113,7 @@ export function Footer() {
 
             <p className="mono-label relative text-gold">Available for new work</p>
 
-            <h2 className="relative mx-auto mt-5 max-w-3xl font-display text-3xl font-semibold leading-[1.15] tracking-tight md:text-5xl">
+            <h2 className="relative mx-auto mt-5 max-w-2xl font-display text-3xl font-semibold leading-[1.15] tracking-tight md:text-5xl">
               Let&apos;s build something{" "}
               <span className="gold-text">customers can trust</span>
             </h2>
