@@ -83,34 +83,37 @@ export function Footer() {
       <div className="mx-auto max-w-7xl px-4 md:px-8">
         {/* CTA card */}
         <Reveal>
-          <div className="glass relative overflow-hidden rounded-[2rem] px-6 py-16 text-center md:px-16 md:py-24">
+          <div className="relative overflow-hidden rounded-[2rem] border border-border/70 bg-surface/50 px-6 py-20 text-center md:px-16 md:py-28">
             <div
               aria-hidden
               className="pointer-events-none absolute -top-24 left-1/2 h-64 w-[36rem] -translate-x-1/2 rounded-full bg-gold/10 blur-3xl"
             />
-            {/* Floating imagery + sparkles */}
+            {/* Portrait ring + sparkles */}
             <div aria-hidden className="pointer-events-none absolute inset-0 hidden sm:block">
               {floaters.map((f) => (
                 <span
-                  key={f.alt}
-                  className={`absolute ${f.className} ${f.size} overflow-hidden rounded-full border border-gold/30 bg-surface p-[3px] shadow-[0_10px_30px_-12px_rgba(0,0,0,0.6)]`}
+                  key={f.className}
+                  className={`absolute ${f.className} ${f.size} overflow-hidden rounded-full border-[3px] border-border-strong/80 bg-background shadow-[0_18px_40px_-16px_rgba(0,0,0,0.75)]`}
                 >
                   <img
                     src={f.src}
                     alt={f.alt}
                     loading="lazy"
+                    width={512}
+                    height={512}
                     className="h-full w-full rounded-full object-cover"
                   />
                 </span>
               ))}
-              <Sparkle className="left-[26%] top-[16%] rotate-12" />
-              <Sparkle className="left-[10%] top-[52%] h-4 w-4 -rotate-12 opacity-70" />
-              <Sparkle className="right-[26%] top-[24%] h-4 w-4 opacity-70" />
-              <Sparkle className="right-[12%] bottom-[38%] rotate-6" />
+              <Sparkle className="left-[29%] top-[13%] rotate-12 text-[#2563eb]" />
+              <Sparkle className="left-[12%] top-[44%] h-4 w-4 -rotate-12 text-[#a3e635]" />
+              <Sparkle className="right-[29%] top-[18%] h-4 w-4 text-[#2563eb]" />
+              <Sparkle className="right-[13%] top-[52%] rotate-6 text-[#a3e635]" />
             </div>
+
             <p className="mono-label relative text-gold">Available for new work</p>
 
-            <h2 className="relative mt-4 font-display text-3xl font-semibold leading-tight tracking-tight md:text-5xl">
+            <h2 className="relative mx-auto mt-5 max-w-3xl font-display text-3xl font-semibold leading-[1.15] tracking-tight md:text-5xl">
               Let&apos;s build something{" "}
               <span className="gold-text">customers can trust</span>
             </h2>
@@ -118,28 +121,21 @@ export function Footer() {
               Microservices, multi-tenant platforms and real-time financial systems — most
               engagements start within two weeks.
             </p>
-            <div className="relative mt-9 flex flex-col items-center justify-center gap-3 sm:flex-row">
+            <div className="relative mt-9 flex justify-center">
               <a
                 href="mailto:m.ssaid356@gmail.com"
-                className="group inline-flex items-center gap-2 rounded-full bg-[var(--gradient-gold)] px-7 py-3.5 text-sm font-semibold text-primary-foreground gold-glow transition-transform hover:scale-[1.02]"
+                className="group inline-flex items-center gap-2 rounded-full bg-[var(--gradient-gold)] px-8 py-3.5 text-sm font-semibold text-primary-foreground gold-glow transition-transform hover:scale-[1.02]"
               >
                 Get in touch
                 <ArrowUpRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
-              </a>
-              <a
-                href="https://linkedin.com/in/mostafasamirsaid"
-                target="_blank"
-                rel="noreferrer"
-                className="inline-flex items-center gap-2 rounded-full border border-border-strong bg-surface/60 px-7 py-3.5 text-sm font-medium transition-colors hover:border-gold/40"
-              >
-                Connect on LinkedIn
               </a>
             </div>
           </div>
         </Reveal>
 
         {/* Link columns */}
-        <div className="mt-16 grid gap-10 border-t border-border pt-12 md:grid-cols-[1.4fr_repeat(4,1fr)] md:gap-8">
+        <div className="mt-16 grid gap-10 pt-4 md:grid-cols-[1.4fr_repeat(4,1fr)] md:gap-8">
+
           <div>
             <div className="flex items-center gap-2">
               <span className="inline-flex h-7 w-7 items-center justify-center rounded-md bg-[var(--gradient-gold)] text-primary-foreground">
