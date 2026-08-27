@@ -81,9 +81,11 @@ export function Footer() {
   return (
     <footer id="contact" className="relative pt-16 md:pt-24">
       <div className="mx-auto max-w-7xl px-4 md:px-8">
-        {/* CTA card */}
+        {/* Single rounded panel: CTA + links, like the reference */}
         <Reveal>
-          <div className="relative overflow-hidden rounded-[2rem] border border-border/70 bg-surface/50 px-6 py-20 text-center md:px-16 md:py-28">
+          <div className="relative overflow-hidden rounded-[2.5rem] border border-border/70">
+            {/* CTA area */}
+            <div className="relative overflow-hidden bg-surface/70 px-6 py-20 text-center md:px-16 md:py-28">
             <div
               aria-hidden
               className="pointer-events-none absolute -top-24 left-1/2 h-64 w-[36rem] -translate-x-1/2 rounded-full bg-gold/10 blur-3xl"
