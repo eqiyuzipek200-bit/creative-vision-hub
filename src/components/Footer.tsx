@@ -1,11 +1,11 @@
 import { ShieldCheck, Github, Linkedin, Mail, Phone, ArrowUpRight } from "lucide-react";
 import { Reveal } from "./Reveal";
-import avatar from "@/assets/ms-avatar.png.asset.json";
-import pMarketplace from "@/assets/project-marketplace.jpg";
-import pMultitenant from "@/assets/project-multitenant.jpg";
-import pRealtime from "@/assets/project-realtime.jpg";
-import pNext from "@/assets/project-nextjs.jpg";
-import portrait from "@/assets/portrait-cutout.webp";
+import face1 from "@/assets/cta-face-1.jpg";
+import face2 from "@/assets/cta-face-2.jpg";
+import face3 from "@/assets/cta-face-3.jpg";
+import face4 from "@/assets/cta-face-4.jpg";
+import face5 from "@/assets/cta-face-5.jpg";
+import face6 from "@/assets/cta-face-6.jpg";
 
 const socials = [
   { Icon: Github, href: "https://github.com/Mostafa-SAID7", label: "GitHub" },
@@ -14,14 +14,14 @@ const socials = [
   { Icon: Phone, href: "tel:+201067358073", label: "Phone" },
 ];
 
-/* Floating image ring around the CTA (mirrors the reference layout) */
+/* Portrait ring around the CTA — mirrors the reference composition */
 const floaters: { src: string; alt: string; className: string; size: string }[] = [
-  { src: portrait, alt: "Mostafa Samir portrait", className: "left-[6%] top-[12%]", size: "h-16 w-16 md:h-20 md:w-20" },
-  { src: pMultitenant, alt: "Multi-tenant platform project", className: "left-[18%] top-[38%]", size: "h-14 w-14 md:h-[4.5rem] md:w-[4.5rem]" },
-  { src: avatar.url, alt: "Mostafa Samir", className: "left-[3%] bottom-[16%]", size: "h-14 w-14 md:h-16 md:w-16" },
-  { src: pRealtime, alt: "Real-time SignalR project", className: "right-[7%] top-[10%]", size: "h-16 w-16 md:h-20 md:w-20" },
-  { src: pMarketplace, alt: "Marketplace project", className: "right-[19%] top-[42%]", size: "h-14 w-14 md:h-[4.5rem] md:w-[4.5rem]" },
-  { src: pNext, alt: "Next.js project", className: "right-[3%] bottom-[14%]", size: "h-14 w-14 md:h-16 md:w-16" },
+  { src: face1, alt: "Client portrait", className: "left-[8%] top-[10%]", size: "h-16 w-16 md:h-[4.75rem] md:w-[4.75rem]" },
+  { src: face2, alt: "Client portrait", className: "left-[19%] top-[30%]", size: "h-16 w-16 md:h-[4.5rem] md:w-[4.5rem]" },
+  { src: face3, alt: "Client portrait", className: "left-[4%] top-[52%]", size: "h-16 w-16 md:h-[4.5rem] md:w-[4.5rem]" },
+  { src: face4, alt: "Client portrait", className: "right-[8%] top-[12%]", size: "h-16 w-16 md:h-[4.75rem] md:w-[4.75rem]" },
+  { src: face5, alt: "Client portrait", className: "right-[19%] top-[36%]", size: "h-16 w-16 md:h-[4.5rem] md:w-[4.5rem]" },
+  { src: face6, alt: "Client portrait", className: "right-[4%] top-[56%]", size: "h-16 w-16 md:h-[4.5rem] md:w-[4.5rem]" },
 ];
 
 function Sparkle({ className }: { className: string }) {
@@ -29,13 +29,14 @@ function Sparkle({ className }: { className: string }) {
     <svg
       aria-hidden
       viewBox="0 0 24 24"
-      className={`absolute h-5 w-5 text-gold ${className}`}
+      className={`absolute h-5 w-5 ${className}`}
       fill="currentColor"
     >
       <path d="M12 0c.6 4.9 3.1 8.5 12 12-8.9 3.5-11.4 7.1-12 12-.6-4.9-3.1-8.5-12-12C8.9 8.5 11.4 4.9 12 0Z" />
     </svg>
   );
 }
+
 
 const columns: { title: string; items: { label: string; href: string }[] }[] = [
   {
